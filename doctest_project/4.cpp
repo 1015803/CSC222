@@ -3,9 +3,12 @@
 using namespace std;
 
 int count_digits(int a) {
-    if (a%10 == a) {
-        return 1;
+    int thing = 1;
+    while (a>=10){
+        thing++;
+        a /= 10;
     }
+    return thing;
 
 }
 
