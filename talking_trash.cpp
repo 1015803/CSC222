@@ -5,6 +5,7 @@ int main()
 // Unsafe memory
     int numbers[5] = {1, 5, 10, 20, 30};
     cout << numbers[5] << endl;
+//arrays are undafe memory because you can acsess data points that dont exists
 //this calls a point from the variable that doesnt exist causing an undefined
 //output which means we do not know what that output will be
 //Garbage in Garbage out
