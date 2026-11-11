@@ -48,16 +48,15 @@ vector<int>  only_odds(const vector<int>& numbers) {
     }
     return variable;
 }
-string  nums_between(const vector<int>& numbers, int num1, int num2) {
-    string result;
+vector<int> nums_between(const vector<int>& numbers, int num1, int num2) {
+    vector<int> result;    
     for (size_t i = 0; i < numbers.size(); i++) {
-        if (numbers[i] > num1 && numbers[i] < num2){
-            result += to_string(numbers[i]) + " ";
+        if (numbers[i] >= num1 && numbers[i] <= num2) {
+            result.push_back(numbers[i]);
         }
     }
     return result;
 }
-
 
 TEST_CASE("Testing render_num_vector") {
     vector<int> nums = {1, 3, 7};
