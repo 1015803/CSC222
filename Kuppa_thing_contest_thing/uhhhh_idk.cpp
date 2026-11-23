@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-int KoopaFinda(const string& input) {
+int KoopaFinda(const string input) {
     bool foundPeach = false;
     for (int i=0; i+5 <= input.length(); i++) {
         if (input.substr(i, 5) == "Peach") {
